@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-MYGIT=/mnt/nvme/zcq/git
+MYGIT=/home/balin/exper
 REPO_PATH=${MYGIT}/shadow_removal
 # DATA_PATH=${MYGIT}/shadow_removal/data/SRD
 # datasetmode=srd
@@ -25,7 +25,7 @@ tv_loss=0
 grad_loss=0.0
 pgrad_loss=0.1
 
-gpus=5
+gpus=0
 
 
 lr=0.0001

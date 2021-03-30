@@ -5,7 +5,7 @@ from models import create_model
 from PIL import Image
 import time
 import math
-from sklearn.metrics import balanced_accuracy_score, mean_squared_error
+from sklearn.metrics import accuracy_score, mean_squared_error
 from skimage.color import rgb2lab
 import numpy as np
 import torch
