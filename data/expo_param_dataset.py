@@ -25,7 +25,7 @@ class ExpoParamDataset(BaseDataset):
         # else:
         #     self.dir_B = opt.mask_train
         print(self.dir_B)
-        self.dir_C = os.path.join(opt.dataroot, opt.phase + 'C_fixed_official')
+        self.dir_C = os.path.join(opt.dataroot, opt.phase + 'C')
         self.dir_param = os.path.join(opt.dataroot, opt.phase + 'params_fixed')  # opt.param_path
         print(self.dir_A)
         self.A_paths, self.imname = make_dataset(self.dir_A)
