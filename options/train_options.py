@@ -30,6 +30,7 @@ class TrainOptions(BaseOptions):
 
         parser.add_argument('--n', type=int, default=3)
         parser.add_argument('--ks', type=int, default=5)
+        parser.add_argument('--rks', type=int, default=3)
         parser.add_argument('--shadow_loss', type=float, default=0.0)
         parser.add_argument('--tv_loss', type=float, default=0.0)
         parser.add_argument('--grad_loss', type=float, default=0.0)

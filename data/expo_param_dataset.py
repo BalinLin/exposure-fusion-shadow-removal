@@ -19,6 +19,7 @@ class ExpoParamDataset(BaseDataset):
         self.dir_A = os.path.join(opt.dataroot, opt.phase + 'A')
         # if not opt.use_our_mask:
         if 'test' in opt.phase:
+            # self.dir_B = os.path.join(opt.dataroot, opt.phase + 'B')
             self.dir_B = os.path.join(opt.dataroot, 'test', 'mask_threshold')
         else:
             self.dir_B = os.path.join(opt.dataroot, opt.phase + 'B')

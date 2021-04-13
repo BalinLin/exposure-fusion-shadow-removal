@@ -5,7 +5,7 @@ from models import create_model
 from PIL import Image
 import time
 import math
-from sklearn.metrics import balanced_accuracy_score, mean_squared_error
+from sklearn.metrics import accuracy_score, mean_squared_error
 from skimage.color import rgb2lab
 import numpy as np
 import torch
@@ -18,11 +18,11 @@ import logging
 
 opt = TrainOptions().parse()
 
-opt.phase = 'train/train_'
-opt.serial_batches = False
-train_data_loader = CreateDataLoader(opt)
-train_dataset = train_data_loader.load_data()
-train_dataset_size = len(train_data_loader)
+# opt.phase = 'train/train_'
+# opt.serial_batches = False
+# train_data_loader = CreateDataLoader(opt)
+# train_dataset = train_data_loader.load_data()
+# train_dataset_size = len(train_data_loader)
 
 opt.phase = 'test/test_'
 opt.batch_size = 1
