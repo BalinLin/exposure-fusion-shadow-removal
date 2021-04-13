@@ -14,8 +14,8 @@ batchs=1
 n=5
 ks=3
 rks=3
-version='fixed5-1-loss-mse'
 # version='fixed5-1-loss'
+version='fixed5-1-loss-mse'
 
 lr_policy=lambda
 lr_decay_iters=50
