@@ -2,14 +2,14 @@
 
 MYGIT=/home/balin/exper
 REPO_PATH=${MYGIT}/shadow_removal/Auto-Exposure
-# DATA_PATH=${MYGIT}/shadow_removal/Auto-Exposure/data/SRD
+# DATA_PATH=${MYGIT}/shadow_removal/Dataset/SRD
 # datasetmode=srd
 
-DATA_PATH=${MYGIT}/shadow_removal/Auto-Exposure/data/ISTD_Dataset
+DATA_PATH=${MYGIT}/shadow_removal/Dataset/ISTD_Dataset
 datasetmode=expo_param
 
 
-batchs=1
+batchs=8
 n=5
 ks=3
 rks=3

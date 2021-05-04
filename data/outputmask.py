@@ -28,15 +28,15 @@ parser.add_argument('--generator_B2A', type=str, default='output/netG_B2A.pth', 
 opt = parser.parse_args()
 
 ### ISTD
-opt.dataroot_A = '/home/balin/exper/shadow_removal/Auto-Exposure/data/ISTD_Dataset/test/test_A'
-opt.dataroot_B = '/home/balin/exper/shadow_removal/Auto-Exposure/data/ISTD_Dataset/test/test_C'
+opt.dataroot_A = '/home/balin/exper/shadow_removal/Dataset/ISTD_Dataset/test/test_A'
+opt.dataroot_B = '/home/balin/exper/shadow_removal/Dataset/ISTD_Dataset/test/test_C'
 
 opt.im_suf_A = '.png'
 opt.im_suf_B = '.png'
 
 ### SRD
-# opt.dataroot_A = '/home/balin/exper/shadow_removal/Auto-Exposure/data/SRD_Dataset/test_data/shadow'
-# opt.dataroot_B = '/home/balin/exper/shadow_removal/Auto-Exposure/data/SRD_Dataset/test_data/shadow_free'
+# opt.dataroot_A = '/home/balin/exper/shadow_removal/Dataset/SRD_Dataset/test_data/shadow'
+# opt.dataroot_B = '/home/balin/exper/shadow_removal/Dataset/SRD_Dataset/test_data/shadow_free'
 #
 # opt.im_suf_A = '.jpg'
 # opt.im_suf_B = '.jpg'

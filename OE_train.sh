@@ -3,10 +3,10 @@
 
 MYGIT=/home/balin/exper
 REPO_PATH=${MYGIT}/shadow_removal/Auto-Exposure
-# DATA_PATH=${MYGIT}/shadow_removal/Auto-Exposure/data/SRD
+# DATA_PATH=${MYGIT}/shadow_removal/Dataset/SRD
 # datasetmode=srd
 
-DATA_PATH=${MYGIT}/shadow_removal/Auto-Exposure/data/ISTD_Dataset
+DATA_PATH=${MYGIT}/shadow_removal/Dataset/ISTD_Dataset
 datasetmode=expo_param
 
 
@@ -17,6 +17,12 @@ rks=3
 # version='fixed5-1-loss'
 version='fixed5-1-loss-mse'
 
+# batchs=4
+# n=5
+# ks=7
+# rks=3
+# version='fixed5-1-loss'
+
 lr_policy=lambda
 lr_decay_iters=50
 optimizer=adam
@@ -26,6 +32,10 @@ tv_loss=0
 grad_loss=0.1
 pgrad_loss=0.0
 
+# tv_loss=0
+# grad_loss=0.0
+# pgrad_loss=0.1
+
 gpus=0
 
 
@@ -33,8 +43,8 @@ lr=0.0001
 loadSize=256
 fineSize=256
 L1=10
-# model=Fusion
 model=Refine
+# model=Fusion
 checkpoint=${REPO_PATH}/log
 dataroot=${DATA_PATH}
 NAME="M${model}_${datasetmode}_b${batchs}_lr${lr}_L1${L1}_n${n}_ks${ks}_v${version}_${optimizer}_${lr_policy}_${shadow_loss}_TV${tv_loss}G${grad_loss}PG${pgrad_loss}"
